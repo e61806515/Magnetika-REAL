@@ -1,7 +1,7 @@
 \documentclass[a4paper,twoside,12pt,DIV=13,BCOR=5mm,numbers=noenddot,cleardoublepage=empty]{scrbook}
 \usepackage[utf8]{inputenc}
 \input{format-LU}  			
-\usepackage{subscript}
+%\usepackage{subscript}
 \usepackage{graphicx}
 \usepackage{float}
 \usepackage{booktabs} % Für schönere Tabellen
@@ -86,8 +86,7 @@
     \centering
     \includegraphics[width=0.5\textwidth]{pictures/HystereseSchaltung.png} % Passe die Breite des Bildes an deine Bedürfnisse an
     \caption{Schaltungsaufbau (Aus Skript)}
-    \end{figure}
-    \\
+    \end{figure}\\
     Mit $R_1$ = 4,7$\Omega$, $R_2$ = 1 $\Omega$. \\
     Durch die Funktionsgenerator wurde eine 100 mHz, 20 Vpp Dreiecksignal eingespeist.
 
@@ -104,9 +103,6 @@
             \caption{Hystereseschleife, 50 mHz}
             \label{fig:meinbild}
              \end{figure}
-
-            \\
-            
             \item Maßstäbe
                 Die Maßstäbe der Achsen müssen aus der Spannungen $U_x$ und $U_y$ bestimmt werden:
                 \begin{equation}
@@ -128,106 +124,89 @@
                 \begin{equation}
                     B = \frac{\tau}{N_4 \cdot A} \cdot U_y \\
                     = 608 \cdot 10^{-3} \frac{T}{V} \cdot U_y \\
-                \end{equation}
-
-            \\
-
+                \end{equation}\\
             \item Je höher die Frequenz eingestellt ist, desto mehr wird die Hystereseschleife verzerrt. ab einem Punkt werden die Spitzen gar nicht zu beobachten.
-
             \begin{figure}[h] 
             \centering
             \includegraphics[width=0.5\textwidth]{pictures/freqAnderung.png} 
             \caption{Frequenzänderung mit 100 mHz Schritten}
             \label{fig:meinbild}
             \end{figure}
-
-            Auf dem Abbildung wurde die Frequenz in 100 mHz Schritten erhöht bis zu 1.3 Hz.
-            
-            \\
-            
+            Auf dem Abbildung wurde die Frequenz in 100 mHz Schritten erhöht bis zu 1.3 Hz.\\
             \item Bei höheren Frequenzen haben die Magnetfeldänderungen eine größere Wirkung auf das Material. Dies kann zu verstärkten Wirbelstromverlusten führen, insbesondere in leitfähigen Materialien wie Eisenkernen. Diese Verluste beeinflussen die Form der Hystereseschleife und können dazu führen, dass sie breiter wird und die Sättigung des Materials schneller auftritt.
-
-            \\
-            
+            \item  
             \item Die frequenz kann als passend betrachtet werden, solange die Spitzen der Magnetisierungsschleife klar erkennbar sind.
-
-            \\
-            
-            \item eine Rückkopplungsschleife könnte verwendet werden, um den Ausgangsstrom basierend auf einer Referenz zu regeln. Dies kann beispielsweise bei der Regelung von Stromversorgungen oder Verstärkern verwendet werden. Durch eine geeignete Rückkopplung kann der Stromverlauf stabilisiert und linearisiert werden.
-            
-            \\
-            
+            \item eine Rückkopplungsschleife könnte verwendet werden, um den Ausgangsstrom basierend auf einer Referenz zu regeln. Dies kann beispielsweise bei der Regelung von Stromversorgungen oder Verstärkern verwendet werden. Durch eine geeignete Rückkopplung kann der Stromverlauf stabilisiert und linearisiert werden.\\
             \item Anhand der Magnetisierungskurve kann man die Messwerte bestimmen: \\
             \begin{tabular}{cc}
                 $B_r$ =& 1.100 T  \\
                 $H_c$ =& 256 $\frac{A}{s}$ \\
                 $B_{max}$ =& 0.739 T
 
-            \end{tabular}
-            
-            \\
-            
-            \item Die magnetische Sättigung in einem Eisenkern  liegt im Bereich von 1,6 bis 2,2 Tesla. Anhand der Hystereseschleife kann man sehen, dass die Flussdichte bei maximaler Feldstärke noch steigen könnte, damit ist Sättigung beim maximalen Strom nicht erreicht
-
-            \\
-            
+            \end{tabular}\\
+            \item Die magnetische Sättigung in einem Eisenkern  liegt im Bereich von 1,6 bis 2,2 Tesla. Anhand der Hystereseschleife kann man sehen, dass die Flussdichte bei maximaler Feldstärke noch steigen könnte, damit ist Sättigung beim maximalen Strom nicht erreicht\\
             \item Die maximale Flussdichte ohne der Eisenkern kann durch dividieren mit der spezifischen Permeabilität $\mu_0$ berechnet werden:
 
                 \begin{equation}
                 B_{\text{max, ohne Kern}} = \frac{B_{\text{max, mit Kern}}}{\mu_0}
-                \end{equation}
-    
-            \\
-            
+                \end{equation}\\ 
             \item Die spezifische Verluste sind eng mit der Fläche innerhalb der Magnetisierungskurve verbunden. Die Fläche repräsentiert nähmlich die Energieverluste des Materials pro Volumeneinheit pro Zyklus. Anhand der Plot bsind die spezifischen Verluste ungefähr 1812.5 W/kg.
         
         \end{enumerate}
-\section{Aufnahme der Permeabilit\"atskurve}
-\subsection{Hintergrund}
-Wird aus der Schaltung zur Aufnahme der Hystereseschleife der Integrator entfernt, steht die gemessene Spannung nicht mehr in Proportion 
-zum Fluss durch die Spule, sondern zu seiner \"anderungsrate. In diesem Fall kann das Entfernen des Integrators mit dem Ableiten der Funktion
-gleichgesetzt werden. Betrachten wir das Verh\"altnis aus der Feldst\"arke und der \"anderungsrate der Flussdichte sprechen wir von 
-differenzieller Permeabilit\"at. Wird diese noch durch die Permeabilit\"at des Vakuums geteilterhalten wir die relative differenzielle Permeabilit\"at Ziel ist es diese zu messen 
-und mit der Hystereseschleife auf plausibilit\"at zu pr\"ufen, sowie ihren spitzenwert zu finden.
-\subsection{Messergebnisse}
-\begin{figure}
-  \includegraphics[width=\linewidth]{pictures/Permeabilitaet.png}
-  \caption{Differenzielle relative Permeabilit\"at abh\"angig von der Feldst\"arke.}
-  \label{fig:perm}
-\end{figure}
-Das Diagramm \ref{fig:perm} zeigt die gemessene differenzielle relative Permeabilit\"at abh\"angig von der Feldst\"arke. Verglichen mit der Hystereseschleife ist die steigungs\"anderung an sich plausibel, der H\"ochstwert an sich mit fast 200.000 doch etwas fragw\"urdig.
 
-\section{Hysteresefamilie und Entmagnetisierung}
-\label{Entmag}
-\subsection{Setup}
-Um die Neukurve (siehe \ref{Neukurve}) aufnehmen zu k\"ofnnen, braucht es einen unmagnetisierten Werkstoff. 
-Der Ringkern wird dazu wiederholt, immer schw\"acher werdend ummagnetisiert wobei die Remanenz jedes mal kleiner wird.
-Die dabei entstehende zusammensetzung aus schw\"acher werdenden Hystereseschleifen wird als Hystesresefamilie bezeichnet. 
-Um einen kontinuierlich schw\"acher werdenden Sinusstrom durch die Elektromagneten zu schicken wird das Signal des Funktionsgenerators 
-mit der Spannung eines sich entladenden Kondendsators moduliert. Der Funktionsgenerator liefert unmoduliert eine Sinusspannung von 6Vpp mit einer Periodendauer von 10s.
-Die RC Schaltung mit deren Spannung die des Funktionsgenerators moduliert wird besitzt eine Zeitkonstante von 60s. Die  induzierte Spannung an der Messpule wird f\"ur diese Messung integriert. 
-Die Widerstandswerte bleiben gleich.
-\subsection{Messergebnisse}
-\begin{figure}
-  \includegraphics[width=\linewidth]{pictures/Hysteresefamilie.png}
-  \caption{Hysteresefamilie die die Entmagnetisierung des Ringkerns zeigt.}
-  \label{fig:entmag}
-\end{figure}
-In dem Diagramm \ref{fig:entmag} kann sch\"ofn die Entmagnetisierung des Materials durch die immer kleiner werdenden Hystereseschleifen betrachtet werden.
-
-\section{Die Neukurve}\label{Neukurve}
-\subsection{Setup}
-Ziel dieser Messung ist es eine Hystereseschleife inklusive einer Neukurve aufzunehmen. 
-Dazu wird der gleiche Messaufbau wie beim einfachen Messen der Hystereseschleife verwendet. Anders ist in diesem Fall aber, dass der Kern des Trafos entmagnetisiert wurde (siehe \ref{Entmag}) und 
-die Dreiecksspannung nur als zwei Zyklen Burst angelegt wird.
-\subsection{Messergebnisse}
-\begin{figure}[H]
-\centering
-  \includegraphics{pictures/Neukurve.png}
-  \caption{Hystereseschleife mit Neukurve.}
-  \label{fig:neukurve}
-\end{figure}
-Im Diagramm \ref{fig:neukurve} sehen wir die bereits bekannte Hystereseschleife mit einer zus\"atzlichen Neukurve die das initale Magnetisieren des unmagnetisierten Stoffes darstellt.
+        \section{Aufnahme der Permeabilit\"atskurve}
+        \subsection{Hintergrund}
+        Wird aus der Schaltung zur Aufnahme der Hystereseschleife der Integrator entfernt, steht die gemessene Spannung nicht mehr in Proportion 
+        zum Fluss durch die Spule, sondern zu seiner \"Anderungsrate. In diesem Fall kann das Entfernen des Integrators mit dem Ableiten der Funktion
+        gleichgesetzt werden. Betrachten wir das Verh\"altnis aus der \"Anderungsrate der Feldst\"arke und der \"Anderungsrate der Flussdichte, sprechen wir von 
+        differenzieller Permeabilit\"at. Die \"Anderungsrate der Feldstärke wird dazu aus der Messwerttabelle abgelesen. Wird die differenzielle Permeabilit\"at noch durch die Permeabilit\"at des Vakuums geteilt, erhalten wir die relative differenzielle Permeabilit\"at. Ziel ist es diese zu messen 
+        und auf Plausibilit\"at zu pr\"ufen, sowie ihren Spitzenwert zu finden.
+        \subsection{Messergebnisse}
+        \begin{figure}
+          \centering
+          \includegraphics[width=0.9\linewidth]{pictures/Permeabilitaet.png}
+          \caption{Differenzielle relative Permeabilit\"at abh\"angig von der Feldst\"arke.}
+          \label{fig:perm}
+        \end{figure}
+        Das Diagramm \ref{fig:perm} zeigt die gemessene differenzielle relative Permeabilit\"at abh\"angig von der Feldst\"arke. Ihr H\"ochstwert liegt bei etwa 2600. 
+        Vergleichen wir diesen Wert mit der g\"angigen relativen Permeabilit\"at f\"ur Eisen liegt der gemessene Wert in einem plausiblen Rahmen.
+        
+        \section{Hysteresefamilie und Entmagnetisierung}
+        \label{Entmag}
+        \subsection{Setup}
+        Um die Neukurve (siehe \ref{Neukurve}) aufnehmen zu k\"onnen, braucht es einen unmagnetisierten Werkstoff. 
+        Der Ringkern wird dazu wiederholt, immer schw\"acher werdend, ummagnetisiert, wobei die Remanenz jedes mal kleiner wird.
+        Die dabei entstehende Zusammensetzung aus schw\"acher werdenden Hystereseschleifen wird als Hystesresefamilie bezeichnet. 
+        Um einen kontinuierlich schw\"acher werdenden Sinusstrom durch die Elektromagneten zu schicken, wird das Signal des Funktionsgenerators 
+        mit der Spannung eines sich entladenden Kondendsators moduliert. Der Funktionsgenerator liefert unmoduliert eine Sinusspannung von 20Vpp mit einer Periodendauer von zehn Sekunden.
+        Die RC Schaltung mit deren Spannung die des Funktionsgenerators moduliert wird, besitzt eine Zeitkonstante von 60s. Die induzierte Spannung an der Messpule wird f\"ur diese Messung integriert. 
+        Die Widerstandswerte bleiben gleich.
+        \subsection{Messergebnisse}
+        \begin{figure}
+          \centering
+          \includegraphics[width=0.9\linewidth]{pictures/Hysteresefamilie.png}
+          \caption{Hysteresefamilie, die die Entmagnetisierung des Ringkerns zeigt.}
+          \label{fig:entmag}
+        \end{figure}
+        In dem Diagramm \ref{fig:entmag} kann sch\"on die Entmagnetisierung des Materials durch die immer kleiner werdenden Hystereseschleifen betrachtet werden.
+        
+        \section{Die Neukurve}\label{Neukurve}
+        \subsection{Setup}
+        Ziel dieser Messung ist es eine Hystereseschleife inklusive einer Neukurve aufzunehmen. 
+        Dazu wird der gleiche Messaufbau wie beim einfachen Messen der Hystereseschleife verwendet. Anders ist in diesem Fall aber, dass der Kern des Trafos entmagnetisiert wurde (siehe \ref{Entmag}) und 
+        die Dreiecksspannung nur als zwei Zyklen Burst mit sechs Volt Spitze-Spitze angelegt wird.
+        \subsection{Messergebnisse}
+        \begin{figure}
+          \centering
+          \includegraphics[width=0.9\linewidth]{pictures/Neukurve.png}
+          \caption{Hystereseschleife mit Neukurve, orange Gerade zur Symmetriepr\"ufung}
+          \label{fig:neukurve}
+        \end{figure}
+        Im Diagramm \ref{fig:neukurve} sehen wir die bereits bekannte Hystereseschleife mit einer zus\"atzlichen Neukurve, die das initale Magnetisieren des unmagnetisierten Stoffes darstellt.
+         Der Integrator ist unter der Annahme, dass das Material vollst\"andig entmagnetisiert wurde, zu Beginn der Messung zur\"uckgesetzt worden. Betrachten wir jetzt aber die Messwerte ist fest zu stellen, dass der Fluss nicht 
+         in beiden Richtungen die gleiche Auslenkung besitzt. Zur besseren Visualisierung ist im Diagramm \ref{fig:neukurve} eine Linie zwischen den Spitzen der Schleife eingezeichnet. 
+         Daraus ist zu erkennen, dass der Eisenkern zuvor nicht vollst\"andig entmagnetisiert wurde. 
+        
 \chapter{Übungen am Elektromagneten}
 \section{Metallscheiben im Magnetfeld}
 \label{Metallscheiben im Magnetfeld}
