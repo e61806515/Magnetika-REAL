@@ -39,82 +39,85 @@
 \chapter{Ringkerntrafo aus unlegiertem Einsatzstahl}
 \section{Aufnahme einer Hystereseschleife}
 
-    Die Magnetisierung beschreibt den Zusammenhang zwischen der magnetischen Flussdichte $\Vec{\textbf{B}}$ und der magnetischen Feldstärke $\Vec{\textbf{H}}$
+    Die Magnetisierung beschreibt den Zusammenhang zwischen der magnetischen Flussdichte $\textbf{B}$ und der magnetischen Feldstärke $\textbf{H}$:
     \begin{equation}
-        \Vec{\textbf{B}} = \mu_0 (\Vec{\textbf{H}} + \Vec{\textbf{M}}) = \mu\Vec{\textbf{H}}
+        \textbf{B} = \mu_0 (\textbf{H} + \textbf{M}) = \mu\textbf{H}
     \end{equation} 
     Dabei ist $\mu_0$ die magnetische Feldkonstante und $\mu$ die Permeabilität. \\
-    Durch eine Hystereseschleife kann die Beziehung zwischen $\Vec{\textbf{B}}$ und $\Vec{\textbf{H}}$ anschaulich präsentiert werden. Eine typische Hystereseschleife ist eine geschlossene Kurve, die im\textbf{B}-\textbf{H} Koordinatensystem abgebildet wird. \\
+    Durch eine Hystereseschleife kann die Beziehung zwischen $\textbf{B}$ und $\textbf{H}$ anschaulich präsentiert werden. Eine typische Hystereseschleife ist eine geschlossene Kurve, die im \textbf{B}-\textbf{H}-Koordinatensystem abgebildet wird. \\
     
     \begin{itemize}
-        \item  Wenn eine entmagnetisierte Probe bis zur positiven Sättigungsmagnetisierung $+M_S$ aufmagnetisiert wird, wird die \textbf{Neukurve} durchgelaufen. Bei höheren Magnetfeldstärken wird die \textbf{Sättigungspunkt} erreicht, wo die Flussdichte nicht mehr aufsteigen kann.
-        \item Wenn das Magnetfeld in die entgegengesetzte Richtung geändert wird, sinkt die magnetische Flussdichte nicht sofort auf Null. Stattdessen bleibt eine Restmagnetisierung im Material zurück. Dieser Punkt wird als \textbf{Remanenzpunkt} bezeichnet mit \textbf{B$_R$}.
+        \item Wenn eine entmagnetisierte Probe bis zur positiven Sättigungsmagnetisierung $+M_S$ aufmagnetisiert wird, wird die \textbf{Neukurve} durchlaufen. Bei höheren Magnetfeldstärken wird der \textbf{Sättigungspunkt} erreicht, wo die Flussdichte nicht weiter steigen kann.
+        \item Wenn das Magnetfeld in die entgegengesetzte Richtung geändert wird, sinkt die magnetische Flussdichte nicht sofort auf Null. Stattdessen bleibt eine Restmagnetisierung im Material zurück. Dieser Punkt wird als \textbf{Remanenzpunkt} mit \textbf{B$_R$} bezeichnet.
         \item Um die Restmagnetisierung zu neutralisieren und das Material vollständig zu entmagnetisieren, muss das entgegengesetzte Magnetfeld eine bestimmte Stärke erreichen. Diese Stärke wird als \textbf{Koerzitivfeldstärke} \textbf{H$_C$} bezeichnet. \\
-        
     \end{itemize}
     
     \subsection{Übungsdurchführung}
     
-    Im Rahmen der Laborübung war das magnetische Verhalten von unlegierter Einsatzstahl zu bestimmen. Neben der Eisenring wurde noch ein Funktionsgenerator und Integrator mit USB-anschluss zur Verfügung gestellt. Die Hystereseschleifen sind durch dem Integrator erhalten geblieben und könnten durch ein Software am PC zur analyse dargestellt werden.
-
-    \newpage
+    Im Rahmen der Laborübung war das magnetische Verhalten von unlegiertem Einsatzstahl zu bestimmen. Neben dem Eisenring wurden noch ein Funktionsgenerator und ein Integrator mit USB-Anschluss zur Verfügung gestellt. Die Hystereseschleifen wurden durch den Integrator aufgezeichnet und konnten mittels einer Software am PC zur Analyse dargestellt werden.
     
     \subsection{Probe}
 
-    Zur Messung der magnetischen Verhalten von unlegierter Einsatzstahl wurde ein \textbf{Eisen-Ringkern} aus ungeblechter und unlegierter Einsatzstahl bereitgestellt, das mit vier verschiedenen Wicklungen umgewickelt ist.
+    Zur Messung des magnetischen Verhaltens von unlegiertem Einsatzstahl wurde ein \textbf{Eisen-Ringkern} aus ungeblechtem und unlegiertem Einsatzstahl verwendet, der mit vier verschiedenen Wicklungen umwickelt ist.
 
     \begin{center}
-        
-    \begin{tabular}{cc}
-    Wicklung W1: & 730 Windungen \\
-    Wicklung W2: & 749 Windungen \\
-    Wicklung W3: & 732 Windungen \\
-    Wicklung W4: & 731 Windungen \\
-    Kernaußendurchmesser $d_a$ & 183 mm \\
-    Kernunnendurchmesser $d_i$ & 153 mm \\
-    Breite b & 15 mm \\
-    Höhe h & 15 mm \\
-    Wirksamer Querschnitt $A_w$ & 225 mm² \\
-    Mittlere Eisenlänge $l_m$ & 528 mm \\
+    \begin{tabular}{|c|c|} \hline
+    Wicklung W1: & 730 Windungen \\ \hline
+    Wicklung W2: & 749 Windungen \\ \hline
+    Wicklung W3: & 732 Windungen \\ \hline
+    Wicklung W4: & 731 Windungen \\ \hline
+    Kernaußendurchmesser $d_a$: & 183 mm \\ \hline
+    Kerninnendurchmesser $d_i$: & 153 mm \\ \hline
+    Breite $b$: & 15 mm \\ \hline
+    Höhe $h$: & 15 mm \\ \hline
+    Wirksamer Querschnitt $A_w$: & 225 mm² \\ \hline
+    Mittlere Eisenlänge $l_m$: & 528 mm \\ \hline
     \end{tabular}
     \end{center}
     
     \subsection{Schaltung}
 
-    Es wurden zwei Widerstände und drei Spulen in serie zusammengeschaltet. Beim \textit{$R_2$} wurde die Eingangsspannung \textit{x} gemessen.Auf die vierte Spule wurde die Integrator angeschlossen zur Messung der Ausgangsspannung \textit{y}.
+    Es wurden zwei Widerstände und drei Spulen in Serie zusammengeschaltet. An \textit{$R_2$} wurde die Eingangsspannung $U_x$ gemessen. An die vierte Spule wurde der Integrator zur Messung der Ausgangsspannung $U_y$ angeschlossen.
     \begin{figure}[h] 
     \centering
     \includegraphics[width=0.5\textwidth]{pictures/HystereseSchaltung.png} % Passe die Breite des Bildes an deine Bedürfnisse an
-    \caption{Schaltungsaufbau (Aus Skript)}
-    \end{figure}\\
-    Mit $R_1$ = 4,7$\Omega$, $R_2$ = 1 $\Omega$. \\
-    Durch die Funktionsgenerator wurde eine 100 mHz, 20 Vpp Dreiecksignal eingespeist.
+    \caption{Schaltungsaufbau (aus dem Skript)}
+    \end{figure}
+    \\
+    Mit $R_1$ = 4,7 $\Omega$, $R_2$ = 1 $\Omega$. \\
+    Durch den Funktionsgenerator wurde ein 100 mHz, 20 Vpp Dreiecksignal eingespeist.
 
     \newpage
 
+
+
     \subsection{Messergebnisse}
 
-        \begin{enumerate}
-            \item Die Magnetisierungskurve bei 100 mHz sieht so aus:
+
+        
+            \subsubsection{Aufgabe 1} 
+            Die Magnetisierungskurve bei 100 mHz sieht so aus:
 
             \begin{figure}[h] 
             \centering
-            \includegraphics[width=0.5\textwidth]{pictures/50mHz.png} 
-            \caption{Hystereseschleife, 50 mHz}
+            \includegraphics[width=\textwidth]{pictures/50mHz.png} 
+            \caption{Hystereseschleife, 100 mHz}
             \label{fig:meinbild}
              \end{figure}
-            \item Maßstäbe
-                Die Maßstäbe der Achsen müssen aus der Spannungen $U_x$ und $U_y$ bestimmt werden:
+		Der Abbildung wurde ein Offset von  hinzugefügt, um Symmetrie zu gewährleisten.
+
+  
+            \subsubsection{Aufgabe 2}
+                Die Maßstäbe der Achsen müssen aus den Spannungen $U_x$ und $U_y$ bestimmt werden:
                 \begin{equation}
                     H = \frac{(N_1 + N_2 + N_3) \cdot I_1}{l_m} \\
                     = \frac{N_1 + N_2 + N_3}{R_2 \cdot l_m} \cdot U_x \\
-                    = \frac{A}{V_m} \cdot U_x
                 \end{equation}
                 \begin{equation}
-                    H = 4187.5 \frac{A}{s}
+                    H = 4187,604 \frac{\text{A}}{\text{m}} \cdot U_x
                 \end{equation}
 
-                und die magnetische flussdichte B:
+                Analog dazu wird die magnetische Flussdichte $B$ berechnet:
                 \begin{equation}
                     U_y = -\frac{1}{R \cdot C} \cdot \int U_4 \cdot dt \\
                     = \frac{1}{\tau} \cdot \int N_4 \cdot \frac{d\phi}{dt} \cdot dt \\
@@ -123,36 +126,69 @@
                 \end{equation}
                 \begin{equation}
                     B = \frac{\tau}{N_4 \cdot A} \cdot U_y \\
-                    = 608 \cdot 10^{-3} \frac{T}{V} \cdot U_y \\
-                \end{equation}\\
-            \item Je höher die Frequenz eingestellt ist, desto mehr wird die Hystereseschleife verzerrt. ab einem Punkt werden die Spitzen gar nicht zu beobachten.
+                    = -547,196 \cdot 10^{-3} \frac{\text{T}}{\text{V}} \cdot U_y
+                \end{equation}
+
+            
+
+            \newpage
+
+            \subsubsection{Aufgabe 3} Je höher die Frequenz eingestellt ist, desto mehr wird die Hystereseschleife verzerrt. Ab 400 mHz sind die Spitzen nicht mehr zu beobachten.
+
             \begin{figure}[h] 
             \centering
-            \includegraphics[width=0.5\textwidth]{pictures/freqAnderung.png} 
+            \includegraphics[width=\textwidth]{pictures/freqAnderung.png} 
             \caption{Frequenzänderung mit 100 mHz Schritten}
             \label{fig:meinbild}
             \end{figure}
-            Auf dem Abbildung wurde die Frequenz in 100 mHz Schritten erhöht bis zu 1.3 Hz.\\
-            \item Bei höheren Frequenzen haben die Magnetfeldänderungen eine größere Wirkung auf das Material. Dies kann zu verstärkten Wirbelstromverlusten führen, insbesondere in leitfähigen Materialien wie Eisenkernen. Diese Verluste beeinflussen die Form der Hystereseschleife und können dazu führen, dass sie breiter wird und die Sättigung des Materials schneller auftritt.
-            \item  
-            \item Die frequenz kann als passend betrachtet werden, solange die Spitzen der Magnetisierungsschleife klar erkennbar sind.
-            \item eine Rückkopplungsschleife könnte verwendet werden, um den Ausgangsstrom basierend auf einer Referenz zu regeln. Dies kann beispielsweise bei der Regelung von Stromversorgungen oder Verstärkern verwendet werden. Durch eine geeignete Rückkopplung kann der Stromverlauf stabilisiert und linearisiert werden.\\
-            \item Anhand der Magnetisierungskurve kann man die Messwerte bestimmen: \\
-            \begin{tabular}{cc}
-                $B_r$ =& 1.100 T  \\
-                $H_c$ =& 256 $\frac{A}{s}$ \\
-                $B_{max}$ =& 0.739 T
 
-            \end{tabular}\\
-            \item Die magnetische Sättigung in einem Eisenkern  liegt im Bereich von 1,6 bis 2,2 Tesla. Anhand der Hystereseschleife kann man sehen, dass die Flussdichte bei maximaler Feldstärke noch steigen könnte, damit ist Sättigung beim maximalen Strom nicht erreicht\\
-            \item Die maximale Flussdichte ohne der Eisenkern kann durch dividieren mit der spezifischen Permeabilität $\mu_0$ berechnet werden:
+            Auf der Abbildung wurde die Frequenz in 100 mHz Schritten erhöht von 100 mHz bis zu 1,3 Hz.
+            Der Abbildung wurde ein Offset hinzugefügt, um Symmetrie zu gewährleisten.
+            
 
+            \subsubsection{Aufgabe 4}
+            Bei höheren Frequenzen haben die Magnetfeldänderungen eine größere Wirkung auf das Material. Dies kann zu verstärkten Wirbelstromverlusten führen, insbesondere in leitfähigen Materialien wie Eisenkernen. Diese Verluste beeinflussen die Form der Hystereseschleife und können dazu führen, dass sie breiter wird und die Sättigung des Materials schneller auftritt.
+
+            
+
+            \subsubsection{Aufgabe 5} Die Frequenz kann als passend betrachtet werden, solange die Spitzen der Magnetisierungsschleife klar erkennbar sind. In unserem Fall sind die Spitzen bei Frequenzen größer als 200 mHz nicht mehr erkennbar, daher ist die höchste geeignete Frequenz 200 mHz.
+
+            
+
+            \subsubsection{Aufgabe 6} Eine Stromquelle könnte verwendet werden, um den Ausgangsstrom basierend auf einer Referenz zu regeln.             
+            
+
+            \subsubsection{Aufgabe 7} Die Messwerte können einfach von der Magnetisierungskurve abgelesen werden. \\
+            \begin{tabular}{c c}
+                $B_r$ =& 1,100 T  \\
+                $H_c$ =& 256 $\frac{A}{m}$ \\
+                $B_{max}$ =& 0,739 T
+            \end{tabular}
+            
+            
+            
+            \subsubsection{Aufgabe 8} Die magnetische Sättigung in einem Eisenkern liegt im Bereich von 1,6 bis 2,2 Tesla. Anhand der Hystereseschleife kann man sehen, dass die Flussdichte bei maximaler Feldstärke noch steigen könnte, sodass die Sättigung beim maximalen Strom nicht erreicht wurde.
+
+            
+            
+            \subsubsection{Aufgabe 9} Die maximale Flussdichte ohne den Eisenkern kann durch Division mit der spezifischen Permeabilität $\mu_0$ berechnet werden:
                 \begin{equation}
-                B_{\text{max, ohne Kern}} = \frac{B_{\text{max, mit Kern}}}{\mu_0}
-                \end{equation}\\ 
-            \item Die spezifische Verluste sind eng mit der Fläche innerhalb der Magnetisierungskurve verbunden. Die Fläche repräsentiert nähmlich die Energieverluste des Materials pro Volumeneinheit pro Zyklus. Anhand der Plot bsind die spezifischen Verluste ungefähr 1812.5 W/kg.
+                B_{\text{max, ohne Kern}} = \frac{B_{\text{max, mit Kern}}}{\mu_r}
+                \end{equation}
+    
+            
+            
+            \subsubsection{Aufgabe 10} Die spezifischen Verluste sind eng mit der Fläche innerhalb der Magnetisierungskurve verbunden. Die Fläche repräsentiert nämlich die Energieverluste des Materials pro Volumeneinheit pro Zyklus. Anhand des Plots sind die spezifischen Verluste 1,812 mW/kg.
         
-        \end{enumerate}
+    
+
+	\newpage
+
+
+
+
+
+
 
         \section{Aufnahme der Permeabilit\"atskurve}
         \subsection{Hintergrund}
