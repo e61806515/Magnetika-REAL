@@ -61,7 +61,7 @@
     Zur Messung des magnetischen Verhaltens von unlegiertem Einsatzstahl wurde ein \textbf{Eisen-Ringkern} aus ungeblechtem und unlegiertem Einsatzstahl verwendet, der mit vier verschiedenen Wicklungen umwickelt ist.
 
     \begin{center}
-    \begin{tabular}{|c|c|} \hline
+    \begin{tabular}{|l|c|} \hline
     Wicklung W1: & 730 Windungen \\ \hline
     Wicklung W2: & 749 Windungen \\ \hline
     Wicklung W3: & 732 Windungen \\ \hline
@@ -195,8 +195,16 @@
         Wird aus der Schaltung zur Aufnahme der Hystereseschleife der Integrator entfernt, steht die gemessene Spannung nicht mehr in Proportion 
         zum Fluss durch die Spule, sondern zu seiner \"Anderungsrate. In diesem Fall kann das Entfernen des Integrators mit dem Ableiten der Funktion
         gleichgesetzt werden. Betrachten wir das Verh\"altnis aus der \"Anderungsrate der Feldst\"arke und der \"Anderungsrate der Flussdichte, sprechen wir von 
-        differenzieller Permeabilit\"at. Die \"Anderungsrate der Feldstärke wird dazu aus der Messwerttabelle abgelesen. Wird die differenzielle Permeabilit\"at noch durch die Permeabilit\"at des Vakuums geteilt, erhalten wir die relative differenzielle Permeabilit\"at. Ziel ist es diese zu messen 
+        differenzieller Permeabilit\"at. Die mittlere \"Anderungsrate der Feldstärke kann dazu aus der Grafik \ref{fig:feld} abgelesen werden. Den der Grafik zu grundeliegenden Daten entnommen betr\"agt sie 852 Ampere pro Meter und Sekunde. Wird die differenzielle Permeabilit\"at noch durch die Permeabilit\"at des Vakuums geteilt, erhalten wir die relative differenzielle Permeabilit\"at. Ziel ist es diese zu messen 
         und auf Plausibilit\"at zu pr\"ufen, sowie ihren Spitzenwert zu finden.
+
+        \begin{figure}
+          \centering
+          \includegraphics[width=0.9\linewidth]{pictures/Feld_Delta.png}
+          \caption{\"Anderung der Feldst\"arke.}
+          \label{fig:feld}
+        \end{figure}
+
         \subsection{Messergebnisse}
         \begin{figure}
           \centering
@@ -214,7 +222,7 @@
         Der Ringkern wird dazu wiederholt, immer schw\"acher werdend, ummagnetisiert, wobei die Remanenz jedes mal kleiner wird.
         Die dabei entstehende Zusammensetzung aus schw\"acher werdenden Hystereseschleifen wird als Hystesresefamilie bezeichnet. 
         Um einen kontinuierlich schw\"acher werdenden Sinusstrom durch die Elektromagneten zu schicken, wird das Signal des Funktionsgenerators 
-        mit der Spannung eines sich entladenden Kondendsators moduliert. Der Funktionsgenerator liefert unmoduliert eine Sinusspannung von 20Vpp mit einer Periodendauer von zehn Sekunden.
+        mit der Spannung eines sich entladenden Kondendsators moduliert. Der Funktionsgenerator liefert unmoduliert eine Sinusspannung von 20 Volt Spitze-spitze mit einer Periodendauer von zehn Sekunden.
         Die RC Schaltung mit deren Spannung die des Funktionsgenerators moduliert wird, besitzt eine Zeitkonstante von 60s. Die induzierte Spannung an der Messpule wird f\"ur diese Messung integriert. 
         Die Widerstandswerte bleiben gleich.
         \subsection{Messergebnisse}
@@ -322,7 +330,7 @@ Zur Messung des magntischen Feldes wurde ein Gauss/Teslameter, Model 5080 der Fi
 \noindent Abbildung \ref{fig:flussdichtestrom} zeigt die Messergebnisse. Es ist eine Remanenzflussdichte von $34.5 mT$ bei einem Magnetisierungsstrom von $0 A$ gemessen worden. Weiters ist zu erkennen, dass das Material bei etwa $15-20 A$ gesättigt ist, ab da steigt die Flussdichte nur noch leicht über 2 Tesla an.
 
 \section{Lorentzkraft}
-Es wurde ein mit $20 A$ druchflossener Leiter in das Magnetfeld gelegt. Auf den Leiter wirkte die Lorentzkraft entsprechend \autoref{Lorentzkraft}, die ihn nach oben oder unten (je nach Positionierung des Drahtes) zog. Bei einem Magnetisierungsstrom von $20 A$ beträgt die Flussdichte zwischen den Polschuhen 2 Tesla, das entspricht einer Kraft von 4\,N auf den Leiter.
+Es wurde ein mit $20 A$ druchflossener Leiter in das Magnetfeld gelegt. Auf den Leiter wirkte die Lorentzkraft entsprechend \ref{Lorentzkraft}, die ihn nach oben oder unten (je nach Positionierung des Drahtes) zog. Bei einem Magnetisierungsstrom von $20 A$ beträgt die Flussdichte zwischen den Polschuhen 2 Tesla, das entspricht einer Kraft von 4\,N auf den Leiter.
 \begin{equation}
 	\mathbf{F} = \mathbf{B} \times I \mathbf{e_i} \cdot l
 	\label{Lorentzkraft}
